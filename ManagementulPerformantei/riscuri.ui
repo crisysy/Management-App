@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Riscuri</class>
+ <widget class="QDialog" name="Riscuri">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>781</width>
+     <height>331</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addrisc">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>430</y>
+     <width>190</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Adauga un nou risc</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="aclient">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>470</y>
+     <width>190</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Analiza clienti</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="iesire">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>550</y>
+     <width>190</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Iesire</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="rfin">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>510</y>
+     <width>190</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Riscuri financiare</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>781</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Indtroduceti informatiile cerute:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="descriere">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>781</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Descrierea riscului:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="descriereEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>781</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="gravitate">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Gravitatea:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="gravitateBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>Scazuta</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Moderat</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Crescut</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Iminent</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="prob">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>100</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Probabilitate de aparitie:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="probBox">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>130</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>Scazuta</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Moderat</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Crescut</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Iminent</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="gradBox">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>130</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>Scazut</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Moderat</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Crescut</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Iminent</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="grad">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>100</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Grad de detctabilitate:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>170</y>
+     <width>781</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Indtroduceti informatiile cerute:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="evaluareBox_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>300</y>
+     <width>261</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>Scazuta</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Moderat</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Crescut</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Iminent</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="evaluare">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>270</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Evaluare riscului pentru acest client:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="client">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>200</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Alegeti clientul:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="clientBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>230</y>
+     <width>261</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="risc">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>200</y>
+     <width>331</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Alegeti riscul asociat:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="riscBox">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>230</y>
+     <width>261</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="salveaza2">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>340</y>
+     <width>190</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Salveaza</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="anuleaza2">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>380</y>
+     <width>190</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Anuleaza</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="anuleaza1">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>200</y>
+     <width>190</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Anuleaza</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="salveaza1">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>160</y>
+     <width>190</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Salveaza</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="actiune">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>270</y>
+     <width>331</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Actiune corectiva pentru diminuarea riscului:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="actiuneEdit">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>300</y>
+     <width>331</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
